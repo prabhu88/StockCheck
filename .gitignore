@@ -1,3 +1,9 @@
+/public
+/scripts
+/server
+/src
+
+main.js
 # Logs
 logs
 *.log
