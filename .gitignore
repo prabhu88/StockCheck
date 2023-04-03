@@ -1,7 +1,11 @@
 /public
 /scripts
-/server
+/server/SQL
 /src
+
+*.bak
+*.db
+t1.js
 
 main.js
 # Logs
