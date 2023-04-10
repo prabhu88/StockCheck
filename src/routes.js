@@ -21,7 +21,8 @@
  */
 import Dashboard from './views/dashboard'
 import BuyMeCoffee from './views/buyMeCoffee';
-import Client from './views/client';
+import AddClient from './views/addclient';
+import EditClient from './views/editclient';
 const routes = [
   {
     path: "/Dashboard",
@@ -30,11 +31,18 @@ const routes = [
     component: Dashboard,
     layout: "/admin"
   },
+  // {
+  //   path: "/New-Client",
+  //   name: "Add-Client",
+  //   icon: "nc-icon nc-chart-pie-35",
+  //   component: AddClient,
+  //   layout: "/admin"
+  // },
   {
     path: "/Clients",
-    name: "Clients",
+    name: "Client",
     icon: "nc-icon nc-chart-pie-35",
-    component: Client,
+    component: EditClient,
     layout: "/admin"
   },
   {

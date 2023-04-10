@@ -10,6 +10,7 @@ const {dbSetup,serverPort} = require('./constants')
 var bodyParser = require('body-parser')
 var async = require('async')
 var loginRouter = require('./router/loginRouter')
+var clientRouter = require('./router/clientRouter')
 appModulePath.addPath(`${__dirname}`);
 
 const Api = express();
@@ -20,6 +21,7 @@ async.waterfall([
         Api.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
         Api.use(morgan('combined', { stream: winston_logger.stream }));
         Api.use('/auth',loginRouter);
+        Api.use('/client',clientRouter);
         Api.get('/test', (req, res) => {            
             res.status(200).send('success!')
         });

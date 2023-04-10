@@ -3,6 +3,11 @@
 /server/SQL
 /src/assets
 
+/build
+/build-server
+/dist
+
+test.*
 *.bak
 *.db
 t1.js

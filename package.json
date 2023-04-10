@@ -58,6 +58,7 @@
     "scss": "^0.2.4",
     "sqlite3": "^5.1.6",
     "styled-component": "^2.8.0",
+    "sweetalert2": "^11.7.3",
     "winston": "3.8.2"
   },
   "build": {
@@ -70,6 +71,11 @@
     ],
     "directories": {
       "buildResources": "assets"
+    },
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false,
+      "perMachine": false
     }
   },
   "browserslist": []
